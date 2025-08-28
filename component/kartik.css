@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.teamBtn{
+    background-color: rgb(224, 219, 219);
+    margin-right: 15px;
+    width:100px;
+    height: 35px;
+    border:none;
+    margin-bottom: 5px;
+       
+
+}
+.heading{
+    /* background-color: rgb(79, 79, 251); */
+    margin-top: 0;
+    color:black;
+    padding:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+font-size: larger;
+    margin-bottom: 8px;
+}
+.players{
+padding:10px;
+/* margin:10px; */
+background-color: rgb(243, 238, 238);
+}
+.team1players,.team2players{
+margin:5px;
+padding:5px;
+color: black;
+}
+.team1players>p,.team2players>p{
+color:grey;
+}
+
+a{
+    text-decoration: none;
+}
+.leauge{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 15px;
+    font-size: xx-large;
+    font-weight: 600;
+margin-top: 8px;
+color: black;
+   
+}
+
+.team1players{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.team2players
+{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btnDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.navbar{
+    display:flex;
+    flex-direction:width;
+    padding: 10px;
+    background-color: blue;
+    color:white;
+    height:45px;
+    width:100vw;
+}
+.seriesName{
+/* width:30%; */
+color: white;
+font-weight: 600;
+font-size:x-large;
+display: flex;
+margin-left: 15px;
+
+align-items: center;
+}
+.option {
+  width: 70%;
+  display: flex;   /* ✅ this forces links visible always */
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#link{
+text-decoration: none;
+color: white;
+font-weight: 600;
+font-size: larger;
+}@media (max-width: 600px) {
+  .option {
+    display: none !important;       /* force hide on small screens */
+    flex-direction: column;
+    position: absolute;
+    top: 45px;                      /* just below navbar */
+    left: 0;
+    right: 0;
+    background-color: blue;
+    padding: 10px 0;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .option.open {
+    display: flex !important;       /* show when toggle is active */
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    margin-right: 15px;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}

@@ -1,0 +1,141 @@
+
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+/* .kk{
+  display: flex;
+  flex-direction: column;
+  background-color: beige;
+  justify-content: center;
+  align-items: center;
+} */
+.homeContainer{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  width:60%;
+  gap:15px;
+  place-self: center;
+  padding:10px;
+
+}
+.homemain{
+  color:black;
+  background-color: white;
+  border:2px solid rgb(146, 145, 145);
+  padding:10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;;
+}
+.link{
+  color:black;
+}
+.matchno{
+  display: flex;
+  gap:15px;
+}
+.desc{
+  width:50%;
+  display: flex;
+  justify-content: start;
+}
+.date{
+  width:50%;
+  display: flex;
+  justify-content: end;
+}
+.team1left,.team2left{
+  display: flex;
+  gap:10px;
+  width:50%;
+  justify-content: start;
+}
+
+.team1left>img{
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+  
+}
+.teams{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+  
+}
+
+.team2left>img{
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+  
+}
+.team1{
+display:flex;
+gap:10px;
+
+}
+.team2{
+display:flex;
+gap:10px;
+}
+.team1right,.team2right{
+width:50%;
+display: flex;
+gap:10px;
+justify-content: end;
+}
+.team1sname,.team2sname{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* ✅ Existing styles remain the same above */
+
+/* 📱 Small devices (phones) */
+@media (max-width: 600px) {
+  .homeContainer {
+    grid-template-columns: 1fr;   /* stack cards in 1 column */
+    width: 95%;                   /* use most of the screen */
+  }
+
+  .homemain {
+    padding: 8px;
+    font-size: 14px;              /* slightly smaller text */
+  }
+
+  .team1left>img,
+  .team2left>img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* 📱📲 Medium devices (tablets) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .homeContainer {
+    grid-template-columns: repeat(2, 1fr);  /* still 2 cards side by side */
+    width: 90%;                             /* wider than desktop */
+  }
+
+  .homemain {
+    padding: 10px;
+  }
+}
+
+/* 💻 Large devices (desktop/laptop) */
+@media (min-width: 901px) {
+  .homeContainer {
+    grid-template-columns: repeat(2, 1fr);
+    width: 60%;   /* your original design */
+  }
+}
+
